@@ -1,0 +1,25 @@
+
+import requests
+import sys
+
+#vérifiez si les arguments email et mot de pass sont fournis en ligne de commande 
+if len() != 3;
+   print("usage: ./alcasar_login.py email password")
+sys.exit(1)
+
+email = adam.messaoudi@laplateforme.io
+password = w8zJ2NSW
+
+url "https://alcasar.laplateforme.io
+
+data = {
+ "adam.messaoudi@laplateforme.io": email,
+ "w8zJ2NSW": password,
+}
+
+response = requests.post(url, data=data)
+
+if "bienvenue" in response.text:
+   print("conexxion réussie !")
+else:
+   print("échec de la connexion.")
